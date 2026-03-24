@@ -99,11 +99,11 @@ func oauthCallback(w http.ResponseWriter, r *http.Request) {
 		var appURL string
 		switch appCookie.Value {
 		case "mac":
-			appURL = fmt.Sprintf("jprq://auth?token=%s", token)
+			appURL = fmt.Sprintf("jprq://auth/callback?token=%s", token)
 		case "windows":
-			appURL = fmt.Sprintf("jprq://auth?token=%s", token)
+			appURL = fmt.Sprintf("jprq://auth/callback?token=%s", token)
 		case "linux":
-			appURL = fmt.Sprintf("jprq://auth?token=%s", token)
+			appURL = fmt.Sprintf("jprq://auth/callback?token=%s", token)
 		default:
 			// Unknown app type, fall back to web display
 			w.Header().Set("Content-Type", "text/html")
