@@ -117,7 +117,7 @@ Serve on a different domain using CNAME (with v2.3 or higher)
 jprq http 3000 --cname example.com
 ```
 
-Press Ctrl+C to stop it
+Press Ctrl+C to stop it lol!!
 
 ### Update as of Oct 21, 2023
 
